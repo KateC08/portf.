@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        
+        <div class="header">
+            <div class="header-Left">
+                <a class="logo">Katelyn</a>
+            </div>
+        <div class="header-Right">
+            <a class="active" href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact us</a>
+            <a href="services.html">Services</a>
+        </div>
+    </div>
+
+    </header>
+
+    <section id="prof">
+        <div class ="sec-prof">
+            <img src="cartoon.png">
+        </div>
+         
+        <div class="home-style">
+            <h2>Helllo, I'm Kie</h2>
+            <p>A student of Northern Bukidnon State College, <br>
+              taking Bachelor of Science in Information Technology. <br>
+             And looking forward to become a successful programmer!</p>
+         </div>
+    </section>
+    
+    <br>
+    </section>
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = "login.html";
+        }
+
+        document.getElementById('logout').addEventListener('click', function() {
+            localStorage.removeItem('loggedIn');
+            window.location.href = "login.html";
+        });
+    </scrip>
+</body>
+</html>
